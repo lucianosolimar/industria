@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BI — Cluster Indústria | Governança Colaborativa</title>
+<style>
+:root{--ink:#17324d;--muted:#60758a;--line:#dce5ec;--bg:#f4f7fa;--card:#fff;--accent:#1f608d;--soft:#eaf2f8;--warn:#fff6df}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:Segoe UI,Arial,sans-serif;color:var(--ink)}
+header{background:linear-gradient(120deg,#17324d,#2b719f);color:white;padding:34px 6vw 28px}
+header h1{margin:0;font-size:30px} header p{margin:8px 0 0;opacity:.9}
+main{max-width:1250px;margin:auto;padding:24px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-46px;margin-bottom:22px}
+.kpi{background:white;border-radius:14px;padding:20px;box-shadow:0 6px 20px #17324d18;border:1px solid #ffffff}
+.kpi strong{font-size:30px;display:block;color:var(--accent)} .kpi span{color:var(--muted);font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px} .panel{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:18px}
+.panel h2{margin:0 0 12px;font-size:18px} .panel h3{font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+ul{margin:8px 0;padding-left:20px} li{margin:7px 0;line-height:1.4}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.flowbox{background:var(--soft);border-radius:12px;padding:18px} .arrow{align-self:center;font-size:26px;color:var(--accent)}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:12px} .key{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfdff}
+.key span{font-weight:700;color:var(--accent)} .key p{font-size:13px;color:var(--muted);margin:6px 0 0;line-height:1.35}
+table{width:100%;border-collapse:collapse;font-size:13px} th,td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--line)} th{background:var(--soft)}
+.badge{display:inline-block;padding:6px 9px;margin:3px;border-radius:999px;background:var(--soft);font-size:12px}
+.note{background:var(--warn);border-left:4px solid #c68b16;padding:13px;border-radius:8px;line-height:1.4}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px} button{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 13px;cursor:pointer;color:var(--ink)} button.active{background:var(--accent);color:white;border-color:var(--accent)}
+.section{display:none} .section.active{display:block}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:10px 20px 28px}
+@media(max-width:850px){.kpis,.grid2,.keys{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:center}}
+@media(max-width:560px){.kpis,.grid2,.keys{grid-template-columns:1fr}}
+@media print{button,.tabs{display:none}.section{display:block!important}body{background:white}.kpis{margin-top:0}}
+</style>
+</head>
+<body>
+<header>
+<h1>Governança Colaborativa — Cluster Indústria</h1>
+<p>Mapa estratégico da reunião de 14/09/2026 • 20 participantes • São José do Rio Preto</p>
+</header>
+<main>
+<div class="kpis"><div class="kpi"><strong>20</strong><span>participantes</span></div><div class="kpi"><strong>10</strong><span>blocos estratégicos</span></div><div class="kpi"><strong>3</strong><span>desafios explicitados</span></div><div class="kpi"><strong>8</strong><span>chaves de transformação</span></div></div>
+<div class="tabs">
+<button class="active" onclick="show('mapa',this)">Mapa da Transformação</button>
+<button onclick="show('diagnostico',this)">Diagnóstico</button>
+<button onclick="show('pestel',this)">PESTEL</button>
+<button onclick="show('acoes',this)">Ações & Dados</button>
+<button onclick="show('pendencias',this)">Próxima Rodada</button>
+</div>
+
+<section id="mapa" class="section active">
+<div class="panel">
+<h2>Mapa da Transformação</h2>
+<div class="flow">
+<div class="flowbox"><h3>Ponto de partida — Cenário atual</h3><ul><li>Transição política, trabalhista, tributária e tecnológica</li><li>Equipamentos obsoletos e baixa adesão à tecnologia</li><li>Indústria regional diversificada e majoritariamente de pequeno porte</li><li>Carga tributária e custo de energia pressionam o setor</li><li>Qualificação técnica, escolar e de gestão deficiente</li><li>Produtividade abaixo da média e concorrência de importados</li></ul></div>
+<div class="arrow">→</div>
+<div class="flowbox"><h3>Chaves de transformação</h3><p>Pessoas, Empresas, Políticas Públicas, Infraestrutura, Legislação, Educação, Tecnologia, Cooperação</p></div>
+<div class="arrow">→</div>
+<div class="flowbox"><h3>Onde queremos chegar</h3><p><b>Ainda precisa ser construído e validado pelo cluster.</b></p><p>O Word registra apenas a direção: superar os desafios com união de todos os atores.</p></div>
+</div>
+</div>
+<div class="panel"><h2>Chaves de transformação</h2><div class="keys"><div class="key"><span>Pessoas</span><p>Competências, atitudes, comunicação intergeracional e capacitação.</p></div><div class="key"><span>Empresas</span><p>Gestão, processos, governança, sucessão e cooperação.</p></div><div class="key"><span>Políticas Públicas</span><p>Ações e incentivos capazes de acelerar a transformação.</p></div><div class="key"><span>Infraestrutura</span><p>Modernização física, energética, logística e digital.</p></div><div class="key"><span>Legislação</span><p>Revisão, simplificação e melhor compreensão das exigências.</p></div><div class="key"><span>Educação</span><p>Aproximar formação técnica, universitária e gerencial das necessidades reais.</p></div><div class="key"><span>Tecnologia</span><p>Modernizar parque industrial e ampliar adoção pelas pequenas indústrias.</p></div><div class="key"><span>Cooperação</span><p>Ações pré-competitivas e coopetição entre empresas do setor.</p></div></div></div>
+<div class="panel note"><b>Ponto crítico:</b> o cenário desejado e os indicadores ainda não foram fechados pelo grupo. O BI mantém essas lacunas visíveis, em vez de preenchê-las por inferência.</div>
+</section>
+
+<section id="diagnostico" class="section">
+<div class="grid2">
+<div class="panel"><h2>Principais desafios</h2><ul><li>Falta de comunicação</li><li>Qualificação e capacitação da mão de obra</li><li>Falta de interesse em capacitação</li></ul></div>
+<div class="panel"><h2>Principais causas levantadas</h2><ul><li>Baixo interesse em capacitação</li><li>Empresário preso ao operacional</li><li>Gestão não profissionalizada</li><li>Falta de preparação para sucessão</li><li>Baixa percepção sobre governança corporativa</li><li>Falta de união no setor</li><li>Dificuldade para captar recursos</li><li>Conflito geracional</li><li>Falta de pertencimento</li></ul></div>
+<div class="panel"><h2>Oportunidades identificadas</h2><ul><li>Formar cadeias e substituir fornecedores</li><li>Desmistificar IA e tecnologia</li><li>Conectar indústria, startups e universidades</li><li>Atuação setorial entre empresas do mesmo segmento</li><li>Rodadas de negócios</li><li>Cruzar conhecimento prático e conceitual</li><li>Escola de Gestão e capacitação gerencial</li><li>Rotas de desenvolvimento</li></ul></div>
+<div class="panel"><h2>Referências citadas</h2><span class="badge">SENAI</span><span class="badge">InvestSP</span><span class="badge">Desenvolve SP</span><span class="badge">Agronegócio</span><span class="badge">APETI Rio Preto</span></div>
+</div>
+</section>
+
+<section id="pestel" class="section">
+<div class="panel"><h2>Análise PESTEL construída a partir da reunião</h2>
+<table><thead><tr><th>Dimensão</th><th>Elementos identificados</th><th>Leitura estratégica</th></tr></thead><tbody><tr><td><b>Político</b></td><td>Instabilidade política; polarização do país.</td><td>Incerteza para decisões e planejamento de longo prazo.</td></tr><tr><td><b>Econômico</b></td><td>Carga tributária; energia; baixa produtividade; importados; dificuldade de investimento e captação.</td><td>Pressão sobre custos e competitividade, sobretudo nas empresas menores.</td></tr><tr><td><b>Social</b></td><td>Baixa adesão à capacitação; qualificação deficiente; conflito geracional; pertencimento; sucessão.</td><td>Capital humano e cultura aparecem como barreiras importantes.</td></tr><tr><td><b>Tecnológico</b></td><td>Baixa adesão; equipamentos obsoletos; preparo insuficiente para IA; transformação digital.</td><td>Gap tecnológico, mas grande oportunidade de modernização e conexão.</td></tr><tr><td><b>Ambiental</b></td><td>Não apareceram elementos ambientais relevantes nas anotações.</td><td>Lacuna a ser aprofundada; não preencher por inferência.</td></tr><tr><td><b>Legal</b></td><td>Mudanças trabalhistas; escala 6x1; NR-1; transição tributária; percepção sobre legislação paulista.</td><td>Impactos regulatórios percebidos; comparações precisam de evidências.</td></tr></tbody></table>
+</div>
+</section>
+
+<section id="acoes" class="section">
+<div class="grid2">
+<div class="panel"><h2>Resultados de curto prazo</h2><ul><li>Aumentar o engajamento de empresários nas iniciativas do CIESP</li><li>Elevar adesão e fechamento de cursos</li><li>Observar ganhos reais na comunicação</li><li>Gerar resultados-piloto dentro das empresas e disseminá-los</li><li>Usar a participação na segunda reunião como sinal inicial de engajamento</li></ul></div>
+<div class="panel"><h2>Agenda de inteligência / dados</h2><ul><li>Demandas industriais que podem ser atendidas pela UFSCar e outras instituições</li><li>Indicadores de produtividade, emprego, qualificação, tecnologia, energia, comércio exterior e competitividade</li><li>Pesquisa primária com empresários para lacunas não cobertas por bases públicas</li><li>Comparações interestaduais sobre legislação e ambiente de negócios</li><li>Linha de base 2026 e metas intermediárias de 1, 3, 5 e 10 anos</li></ul></div>
+</div>
+<div class="panel"><h2>Lógica de execução</h2>
+<div class="flow"><div class="flowbox"><h3>1. Diagnosticar</h3><p>Fechar desafio e causas-raiz.</p></div><div class="arrow">→</div><div class="flowbox"><h3>2. Priorizar</h3><p>Selecionar chaves e ações mensuráveis.</p></div><div class="arrow">→</div><div class="flowbox"><h3>3. Medir</h3><p>Criar linha de base, indicadores e metas.</p></div></div>
+</div>
+</section>
+
+<section id="pendencias" class="section">
+<div class="panel"><h2>Síntese de pendências para a próxima rodada</h2><ul><li>Fechar e validar o principal desafio</li><li>Separar causas-raiz de sintomas</li><li>Construir e validar o cenário desejado para 10 anos</li><li>Distribuir e priorizar as chaves de transformação</li><li>Definir evidências de sucesso e indicadores</li><li>Transformar ganhos de curto prazo em metas mensuráveis</li><li>Completar referências e benchmarks</li><li>Converter demandas de dados em agenda de inteligência</li><li>Definir próximos passos, responsáveis e prazos</li></ul></div>
+<div class="panel note"><b>Princípio registrado no documento:</b> “ponto de partida → próximos passos → onde chegaremos”. O próximo encontro deve transformar as discussões em prioridades, responsáveis, prazos e indicadores.</div>
+</section>
+</main>
+<footer>BI executivo construído exclusivamente a partir do documento “Governança Colaborativa – Cluster Indústria”, reunião de 14/09/2026. Nenhum dado externo foi acrescentado.</footer>
+<script>
+function show(id,btn){
+ document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active'); btn.classList.add('active');
+}
+</script>
+</body></html>
